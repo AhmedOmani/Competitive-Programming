@@ -1,0 +1,9 @@
+https://codeforces.com/problemset/problem/670/D1
+
+https://codeforces.com/problemset/problem/593/A (Data Structure)
+
+https://codeforces.com/contest/550/problem/C (Brute force with sum numbertheory)
+
+https://codeforces.com/group/3nQaj5GMG5/contest/374321/my (set < vector<int > > st) 
+
+https://codeforces.com/problemset/problem/23/A

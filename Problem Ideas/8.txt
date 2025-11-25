@@ -1,0 +1,8 @@
+given array with n integers
+
+find a number m which satisisfy this property
+
+ai % m == ai+ 1 % m == ai + 2 % m ... an % m ;
+
+solution :
+GCD of differnce

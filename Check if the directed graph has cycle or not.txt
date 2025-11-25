@@ -1,0 +1,33 @@
+
+bool isCycle(int n) {
+
+    vector < int > inDegree(n + 1 , 0);
+
+    for (int i = 1 ; i <= n ; i++)
+        for (auto &child : graph[i])
+            inDegree[child.first] += 1;
+
+    queue < int > q ;
+
+    for (int i = 1 ; i <= n ; i++)
+        if (inDegree[i] == 0) q.push(i) ;
+
+    int visited = 0 ;
+
+    while(!q.empty()) {
+
+        int node = q.front() ;
+        q.pop() ;
+
+        visited += 1 ;
+
+        for (auto &child : graph[node]) {
+            inDegree[child.first] -= 1 ;
+            if (inDegree[child.first] == 0) q.push(child.first) ;
+        }
+
+    }
+
+    return visited != n ;
+
+}

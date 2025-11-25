@@ -1,0 +1,6 @@
+N bottles every bottle has its size and remaining soda in it .
+3 -> Number of bottels
+3 4 5 -> remainig soda in each bottle 
+9 8 7 -> size of each bottle 
+
+Nick has decided to pour all remaining soda into minimal number of bottles.

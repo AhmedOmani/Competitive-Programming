@@ -1,0 +1,42 @@
+const int N = 1e5 + 10;
+long long Fact[N] , invFact[N]; 
+
+ll BinaryExponentiation(ll a , ll b) {
+ 
+    if (b == 0)
+        return 1 ;
+ 
+    ll temp = BinaryExponentiation(a , b >> 1) ;
+ 
+    if (b % 2 == 1)
+        return (1ll * ((temp * temp) % MOD) * a) % MOD ;
+    else
+        return (1ll * temp * temp) % MOD ;
+ 
+ 
+}
+
+void init() {
+    
+    Fact[0] = 1 ;
+    
+    int i ;
+
+    for (i = 1 ; i < N ; i++)
+        Fact[i] = ( Fact[i - 1] * i ) % MOD ;
+        
+    i--;
+    invFact[i] = BinaryExponentiation(Fact[i] , MOD - 2) ;
+    
+    for (i-- ; ~i ; i--)
+        invFact[i] = ( invFact[i + 1] * (i + 1) ) % MOD ;
+
+}
+
+long long nCrUnderMod(int n , int r) {
+    
+    if (r > n || n < 0 || r < 0)
+        return 0 ;
+    
+    return (Fact[n] * invFact[r] * invFact[n - r]) % MOD; 
+}

@@ -1,0 +1,76 @@
+https://codeforces.com/contest/448/problem/D
+
+https://codeforces.com/contest/252/problem/C (Upperd_Bound)
+
+https://codeforces.com/group/ZR9JZ5TsFc/contest/219294/problem/L (Upperd_Bound)
+
+https://codeforces.com/contest/670/problem/D2 (Monotonic array)
+
+https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/ (Monotonic array)
+
+https://codeforces.com/contest/1624/problem/D (binary Search on answer)
+
+https://codeforces.com/contest/1370/problem/D (binary Search on answer)
+------------------------------------------------------------------------------------------------------------------
+the problem : https://codeforces.com/gym/100819/attachments/download/3913/20152016-acmicpc-pacific-northwest-regional-contest-div-2-en.pdf
+ 
+the gym : https://codeforces.com/gym/100819 
+
+problem Q in this GYM is a (binary Search on answer)
+------------------------------------------------------------------------------------------------------------------
+
+https://codeforces.com/contest/817/problem/C (Binary Search On answer)
+
+https://codeforces.com/gym/430411/problem/L (Binary Search On answer) 
+
+https://codeforces.com/contest/888/problem/C (Binary Search on answer)
+
+https://codeforces.com/problemset/problem/676/C (Binary Search on answer)
+
+https://codeforces.com/problemset/problem/1474/B (Sieve + BinarySearch)
+
+----------------------------------------------------------------
+
+https://codeforces.com/contest/1574/problem/C
+
+------------------------------------------------------------
+
+https://codeforces.com/contest/1623/problem/C (binary search on answer + full greedy validation (backward think) ).
+
+------------------------------------------------------------
+
+https://codeforces.com/contest/335/problem/A (Binary on answer)
+------------------------------------------------------------
+
+https://codeforces.com/contest/1840/problem/D (Binary on answer)
+
+------------------------------------------------------------
+
+https://codeforces.com/contest/1195/problem/B (Binary on answer)
+
+------------------------------------------------------------
+
+https://codeforces.com/problemset/problem/1011/B (brute force || binary on answer)
+
+---------------------------------------------------------
+https://codeforces.com/contest/51/problem/C (Binary on answer (double))
+
+---------------------------------------------------------
+
+https://codeforces.com/contest/1862/problem/D (binary on answer)
+---------------------------------------------------------
+
+https://codeforces.com/contest/1692/problem/E (binary search on prefix)
+
+---------------------------------------------------------
+
+https://codeforces.com/contest/1661/problem/C ( binary on answer with a great greedy validation)s
+
+---------------------------------------------------------
+
+https://codeforces.com/gym/103993/problem/I (Binary on answer + upperbound validation (تقعد تنط بيه))
+
+---------------------------------------------------------
+
+https://codeforces.com/contest/1118/problem/D1 (bruteforce version)
+https://codeforces.com/contest/1118/problem/D2 (binarySearch version)

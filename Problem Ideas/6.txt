@@ -1,0 +1,8 @@
+Euler( Euler( Euler( N) ) ) .. K times .
+
+1 <= N <= 1e12 
+1 <= K <= 1e12 
+
+- priblem from here first 20 minutes .
+
+https://www.youtube.com/watch?v=znENoVN73G8&list=PLqf9emQRQrnKvtvyXmHaLuFLSfpZeuKCm&index=2

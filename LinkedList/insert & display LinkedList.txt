@@ -1,0 +1,85 @@
+#include <bits/stdc++.h>
+#define all(v) v.begin() , v.end()
+#define Pi 3.14159
+#define sz(x) int(x.size())
+using namespace std;
+
+using ll = long long;
+
+ll gcd(ll a, ll b) { return ((b == 0) ? a : gcd(b, a % b)); }
+ll lcm(ll a, ll b) { return (b / gcd(a, b)) * a; }
+
+
+void Omani () {
+ios::sync_with_stdio(0); cin.tie(0), cout.tie(0);
+#ifndef ONLINE_JUDGE
+freopen("input.txt", "r", stdin);
+#endif
+#ifdef _LOCAL_DEFINE
+  cerr << (double)clock() * 1.0 / CLOCKS_PER_SEC << endl;
+#endif
+}
+
+struct node{
+
+    int value ;
+    node* next ;
+};
+
+node* head = NULL ;
+
+void InsertNode(int val) {
+
+    node* NewNode , *last ;
+    NewNode = new node ;
+
+    NewNode->value = val ;
+
+    if (head == NULL) {
+
+        head = NewNode ;
+        NewNode->next = NULL;
+
+    } else {
+
+        last = head ;
+
+        while (last->next != NULL)
+            last = last->next ;
+
+        last->next = NewNode ;
+        NewNode->next = NULL;
+
+    }
+
+}
+
+void Solve() {
+
+    InsertNode(5);
+    InsertNode(6);
+    InsertNode(7);
+    InsertNode(8);
+    InsertNode(9);
+    InsertNode(10);
+    InsertNode(11);
+
+    node* print = head ;
+
+    while (print->next != NULL){
+
+        cout << print->value << endl;
+        print = print->next ;
+
+    }
+
+    cout << print->value << endl;
+
+}
+
+
+int main() {
+Omani() ;
+int T = 1 ;                                  ///cin >> T ;
+while(T--) Solve() ;
+}

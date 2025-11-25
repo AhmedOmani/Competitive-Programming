@@ -1,0 +1,9 @@
+https://codeforces.com/gym/104168/problem/B2
+
+https://codeforces.com/problemset/problem/1601/A (relation beetwen anding some number and subtruct this the and from numbers )
+
+https://codeforces.com/problemset/problem/1615/B (prefix with bitmask)
+
+https://codeforces.com/gym/104743/problem/A (constructive)
+
+https://codeforces.com/gym/104743/problem/B

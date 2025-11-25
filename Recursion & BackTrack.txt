@@ -1,0 +1,49 @@
+Solution of The first Problem becuase it hard and i maybe forget it:
+
+https://www.youtube.com/watch?v=H59HuqroRsw
+https://www.youtube.com/watch?v=1eKHq0T0-g0
+
+The Problem :
+
+https://codeforces.com/group/BHIkJm3DeQ/contest/1385/problem/D (Divide & Conquer)
+
+-----------------------------------
+
+https://codeforces.com/contest/96/problem/B (Recursion & BinarySearch) 
+
+--------------------------------------------------------
+https://leetcode.com/problems/all-paths-from-source-to-target/ -> backtrck
+
+------------------------------------------------------------
+
+https://codeforces.com/problemset/problem/653/A -> Recursion SubSequence
+
+---------------------------------------------------------
+
+https://codeforces.com/contest/9/problem/C -> Generate all Sequence with 1 & 0 
+
+--------------------------------------------------------
+https://codeforces.com/contest/121/problem/A -> Generate all lucky numbers with lowerbound
+
+--------------------------------------------------------
+
+https://codeforces.com/gym/103540/problem/B (backTrack)
+
+--------------------------------------------------------
+https://vjudge.net/contest/463553#problem/D (take or leave recursion)
+
+--------------------------------------------------------
+https://codeforces.com/group/gA8A93jony/contest/270592/problem/C
+
+------------------------------------------------------------
+https://codeforces.com/group/gA8A93jony/contest/270592/problem/E
+
+-------------------------------------------------------------
+https://codeforces.com/group/gA8A93jony/contest/270592/problem/J
+
+------------------------------------------------------------ 
+https://codeforces.com/problemset/problem/550/B
+------------------------------------------------------------
+https://codeforces.com/problemset/problem/320/A 
+--------------------------------------------------
+https://leetcode.com/problems/out-of-boundary-paths/description/?envType=daily-question&envId=2024-01-26

@@ -1,0 +1,33 @@
+https://atcoder.jp/contests/abc291/tasks/abc291_d (dp counting)
+
+https://codeforces.com/contest/706/problem/C (0/1 dp)
+
+https://codeforces.com/gym/100135/attachments (problem D)
+
+https://codeforces.com/contest/1324/problem/E
+
+https://codeforces.com/contest/474/problem/D (Counting Combinatorics)
+
+https://codeforces.com/problemset/problem/1633/D (PreComputing before dp + standard knapSack with an adhock observation)
+
+https://codeforces.com/contest/366/problem/C (0 / 1 dp with droped parameters)
+
+https://codeforces.com/contest/264/problem/B (dp with number theory)
+
+https://codeforces.com/gym/103821/submission/200055346 (0 / 1 dp)  
+
+https://vjudge.net/contest/463553#problem/D (0 / 1 dp)
+
+https://codeforces.com/contest/35/problem/D (0 / 1 dp)
+
+https://codeforces.com/problemset/problem/1195/C (0 / 1 dp)
+
+https://codeforces.com/contest/4/problem/D (sorting after that do dp n * n but one parameter & one loop inside recursion)
+
+https://codeforces.com/contest/1573/problem/C (dp on graph)
+
+https://leetcode.com/problems/out-of-boundary-paths/description/?envType=daily-question&envId=2024-01-26 (easy idea of 4 grid transition)
+
+https://codeforces.com/contest/1133/problem/E (binary serach in transition)
+
+https://codeforces.com/contest/1005/problem/D (dp mod 3 idea) 

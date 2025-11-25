@@ -1,0 +1,130 @@
+https://codeforces.com/contest/1709/problem/B (Prefix & Suffix)
+
+------------------------------------------------- 
+
+https://codeforces.com/contest/1547/problem/E (not actually prefix & suffix but its near)
+
+the video solution in minute : 40:00
+
+* https://www.youtube.com/watch?v=7F6_rUh3Fe8&list=PLAa4Q914LSAaXUtko3lrbP2diFjz_2X83&index=21
+
+-------------------------------------------------
+
+https://codeforces.com/gym/101502/problem/F (Prefix of Powers of two)
+
+the tutorial og problem cuase it is a gym problem
+
+https://blog.csdn.net/nike0good/article/details/78422201
+
+--------------------------------------------------
+
+https://codeforces.com/group/i5f48OH2Es/contest/425776/problem/F (Suffix array)
+
+--------------------------------------------------
+
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/902521163/ (Not actually prefix & suffix but similar idea))
+
+------------------------------------------------------
+
+https://codeforces.com/contest/1660/problem/F1 (nice problem on prefix)
+
+------------------------------------------------------
+https://codeforces.com/contest/313/problem/B (Prefix)
+
+------------------------------------------------------
+
+https://codeforces.com/group/dfmvO0RN41/contest/227601/problem/A (not Solved until now)
+
+----------------------------------------------------
+
+https://codeforces.com/contest/1795/problem/C (binary search on prefix)
+
+----------------------------------------------------
+
+https://vjudge.net/contest/463553#problem/H (Prefix 2D) 
+
+----------------------------------------------------
+
+https://codeforces.com/contest/754/problem/A (Prefix & Suffix)
+
+-----------------------------------------------------
+
+https://codeforces.com/contest/1573/problem/B (Suffix + Sorting)
+
+-----------------------------------------------------
+
+https://codeforces.com/gym/104447/problem/D (bruteforce prefix)
+
+-----------------------------------------------------
+
+https://codeforces.com/gym/104375/problem/J (Suffix)
+
+----------------------------------------------------
+
+https://codeforces.com/gym/104168/problem/C3 (Suffix)
+
+-----------------------------------------------------
+
+https://codeforces.com/problemset/problem/1615/B (prefix for each element with bitmask)
+
+-----------------------------------------------------
+
+https://atcoder.jp/contests/abc318/tasks/abc318_c 
+
+----------------------------------------------------
+
+https://codeforces.com/contest/1692/problem/E (binary search on prefix)
+
+----------------------------------------------------
+
+https://codeforces.com/gym/104487/problem/F (prefix& suffix && binary search on them or use ordered set)
+
+----------------------------------------------------
+
+https://codeforces.com/contest/754/problem/A (prefix & suffix)
+
+----------------------------------------------------
+
+https://codeforces.com/contest/1709/problem/B (prefix & suffix)
+
+----------------------------------------------------
+
+https://codeforces.com/contest/1352/problem/E (prefix with frequency)
+
+----------------------------------------------------
+
+https://codeforces.com/contest/1669/problem/F (prefix & suffix with map)
+
+-------------------------------------------------------
+
+https://codeforces.com/gym/101532/problem/G (prefix & suffix)
+
+------------------------------------------------------
+
+https://codeforces.com/problemset/problem/385/C (prefix with number theory idea about counting multiple of number)
+
+------------------------------------------------------
+
+https://codeforces.com/contest/1095/problem/E (prefix & suffix)
+
+------------------------------------------------------
+
+https://codeforces.com/contest/1118/problem/B (prefix & suffix variables)
+-> 
+it just need to observe that after you delete element the oddSuffix became evenSuffix and evenSuffix became oddSuffix 
+
+so you pair evenSuffix (which will bacame oddSuffix) with oddprefix , and
+oddSuffix (which will bacame evenSuffix) with evenprefix
+
+-------------------------------------------------------
+
+https://codeforces.com/contest/1203/problem/D2 (prefix & suffix) :
+ 
+you bruteforce to split the string t and optimize it by prefix & suffix and store first occurence of each letter
+to maximize the size of deleted substring
+
+-------------------------------------------------------
+
+https://leetcode.com/problems/candy/description/
+
+prefix & suffix problem and maximize the prefix and suffix for each i

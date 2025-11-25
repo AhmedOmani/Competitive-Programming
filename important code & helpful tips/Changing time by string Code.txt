@@ -1,0 +1,43 @@
+string UpdateString(string s) {
+
+    int n = s.size() - 1;
+
+    if (s[n] == '9') {
+
+        s[n] = '0' ;
+
+        if (s[n - 1] == '5') {
+
+            s[n - 1] = '0' ;
+
+            if (s[n - 3] == '3' && s[n - 4] == '2') {
+
+                s[n - 3] = '0' , s[n - 4] = '0';
+
+            }else if (s[n - 3] == '9') {
+
+                s[n - 3] = '0' ;
+                s[n - 4]++;
+
+
+            } else {
+
+                s[n - 3]++;
+            }
+
+        } else {
+
+            s[n - 1]++;
+        }
+
+
+    } else {
+
+        s[n]++;
+
+    }
+
+    return s ;
+
+
+}

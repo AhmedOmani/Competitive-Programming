@@ -1,0 +1,25 @@
+https://codeforces.com/contest/275/problem/C (Set)
+
+https://codeforces.com/contest/496/problem/C (Hard Implementation)
+
+https://codeforces.com/contest/357/problem/C (Set)
+
+https://codeforces.com/contest/1790/problem/D (multiset)
+
+https://codeforces.com/problemset/problem/1220/A (multiset / easy)
+
+https://codeforces.com/gym/102942/problem/C (multiset / easy)
+
+https://atcoder.jp/contests/abc291/tasks/abc291_b (easy multiset approach)
+
+https://atcoder.jp/contests/abc290/tasks/abc290_c (set)
+
+https://cses.fi/problemset/task/1091 (multiset)
+
+https://codeforces.com/group/GgyTyveHph/contest/388120/problem/ZA  (Greedy Observation)
+
+https://codeforces.com/group/u3Ii79X3NY/contest/270254/problem/T (set + map + some Combinatorics (Frequency) )
+
+https://codeforces.com/contest/1729/problem/D (set || priority) + greedy intuition
+
+https://codeforces.com/contest/1102/problem/D (greedy - strings)

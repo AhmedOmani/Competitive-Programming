@@ -1,0 +1,72 @@
+struct Node{
+  
+};
+
+/// just implement sigle "leaf node" , Merge , neutral (dummy value)
+struct SegTree {
+
+    vector < Node > tree ;
+
+    SegTree(int n) {
+        int sz = 1 ;
+        while(sz < n) sz *= 2 ;
+        tree = vector <Node> (sz * 2);
+    }
+
+    Node neutral = Node({}) ;
+
+    Node Single(int idx , char c) {}
+
+    Node Merge(Node a , Node b) {}
+
+    void build(int node , int l , int r, vector<int> &v) {
+
+        if (l == r) {
+            tree[node] = Single(l , s[l]) ;
+            return ;
+        }
+
+        int mid = (l + r) / 2 ;
+
+        build(node * 2 , l , mid , s) ;
+        build(node * 2 + 1 , mid + 1,  r , s) ;
+
+        tree[node] = Merge(tree[node * 2] , tree[node * 2 + 1]) ;
+
+    }
+
+    void update(int node , int l , int r , int idx , int val) {
+
+        if (l == r) {
+            tree[node] = Single(l , val) ;
+            return ;
+        }
+
+        int mid = (l + r) / 2 ;
+
+        if (idx <= mid)
+            update(node * 2 , l , mid , idx , val) ;
+
+        else
+            update(node * 2 + 1 , mid + 1 , r , idx , val) ;
+
+        tree[node] = Merge(tree[node * 2] , tree[node * 2 + 1]) ;
+
+    }
+
+    Node query(int node , int l , int r , int start , int end) {
+
+        if (start > r || end < l) return neutral ;
+
+        if (l >= start && r <= end) return tree[node] ;
+
+        int mid = (l + r) / 2 ;
+
+        Node leftval = query(node * 2 , l , mid , start , end) ;
+        Node rightval = query(node * 2 + 1 , mid + 1 , r , start , end) ;
+
+        return Merge(leftval , rightval) ;
+
+    }
+
+};

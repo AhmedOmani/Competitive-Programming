@@ -1,0 +1,4 @@
+given N find the number of binarystring whos lenght is N which does not contain "0100" as a substring .
+
+- the problem :
+https://www.youtube.com/watch?v=tV_wmR7lw20&list=PLqf9emQRQrnKA_EeveiXQj_uP25w8_5qL&index=16

@@ -1,0 +1,88 @@
+#include <bits/stdc++.h>
+#define all(v) v.begin() , v.end()
+#define Pi 3.14159
+using namespace std;
+
+using ll = long long;
+
+ll gcd(ll a, ll b) { return ((b == 0) ? a : gcd(b, a % b)); }
+ll lcm(ll a, ll b) { return (b / gcd(a, b)) * a; }
+
+/// البريفكس ون بيزد متنساش
+void Omani () {
+ios::sync_with_stdio(0); cin.tie(0), cout.tie(0);
+#ifndef ONLINE_JUDGE
+freopen("input.txt", "r", stdin);
+#endif
+}
+const int N = 1e6 + 10 ;;
+ll p = 31 , mod = 1e9 + 7 , Power[N] , Prefix[N] , inv[N];
+
+int subtraction(int a , int b) {
+   return  ((((a - b) % mod) + mod)%mod) ;
+}
+
+int add(int a , int b){
+    return ((a % mod) + (b % mod)) % mod ;
+}
+
+int mult(int a , int b) {
+    return ((a % mod) * (b % mod)) % mod ;
+}
+
+int FastPower(int a , int b) {
+
+    if(!b)
+        return 1 ;
+
+    int temp = FastPower(a , b / 2) ;
+
+    temp = mult(temp , temp) ;
+
+    if (b & 1)
+        temp = mult(temp , a) ;
+
+    return temp ;
+}
+
+
+void BuildPower() {
+
+    Power[0] = 1 , inv[0] = 1;
+
+    int mult_inv = FastPower(p , mod - 2) ;
+
+    for (ll i = 1 ; i <= N - 5 ; i++)
+        Power[i] = mult(Power[i - 1] , p) , inv[i] = mult(inv[i - 1] , mult_inv);
+}
+
+int Hash(string &s) {
+
+    for (int i = 0; i < s.size() ; i++) {
+        Prefix[i + 1] = mult(int(s[i] - 'a' + 1) , Power[i]) ;
+        Prefix[i + 1] = add(Prefix[i + 1] , Prefix[i]) ;
+    }
+
+    return Prefix[s.size()] ;
+}
+
+
+int GetRange(int L , int R) {
+
+    return mult(subtraction(Prefix[R] , Prefix[L - 1]) , inv[L - 1]) ;
+
+}
+
+
+void Solve() {
+
+ 
+
+}
+
+int main() {
+Omani() ;
+BuildPower() ;
+int T = 1 ;                                   ///cin >> T ;
+while(T--) Solve() ;
+}

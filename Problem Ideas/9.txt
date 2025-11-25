@@ -1,0 +1,1 @@
+find two numbers in the array their sum % x == 0 ;

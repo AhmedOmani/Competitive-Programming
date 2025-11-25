@@ -1,0 +1,61 @@
+
+///DONT FORGET TO CALL pre() in the int main.
+
+const int N = 1e6 + 10 , P1 = 37 , P2 = 31;
+long long pw1[N], pw2[N], inv1[N], inv2[N];
+ 
+long long fastPower(long long n, long long m) {
+ 
+    if (!m)
+        return 1 ;
+ 
+    long long temp = fastPower(n , m >> 1) ;
+ 
+    temp = mul_mod(temp , temp , MOD) ;
+ 
+    if (m & 1)
+        temp = mul_mod(temp , n , MOD) ;
+ 
+    return temp ;
+}
+ 
+void pre() {
+    pw1[0] = inv1[0] = pw2[0] = inv2[0] = 1;
+    long long mulInv1 = fastPower(P1, MOD - 2);
+    long long mulInv2 = fastPower(P2, MOD - 2);
+    for (int i = 1; i < N; i++) {
+        pw1[i] = (pw1[i - 1] * P1) % MOD;
+        pw2[i] = (pw2[i - 1] * P2) % MOD;;
+        inv1[i] = (inv1[i - 1] * mulInv1) % MOD;
+        inv2[i] = (inv2[i - 1] * mulInv2) % MOD;;
+    }
+}
+struct Hash {
+    vector<pair<long long, long long>> prefixHash;
+ 
+    Hash(vector<long long> s) {
+        
+        prefixHash = vector<pair<long long, long long>>(s.size(), { 0, 0 });
+        
+        for (int i = 0; i < s.size(); i++) {
+            prefixHash[i].first = ((s[i] * pw1[i]) % MOD + MOD) % MOD;
+            prefixHash[i].second = ((s[i] * pw2[i]) % MOD + MOD) % MOD;
+            if (i)
+                prefixHash[i] = {
+                        ((prefixHash[i].first + prefixHash[i - 1].first) % MOD + MOD) % MOD ,
+                        ((prefixHash[i].second + prefixHash[i - 1].second) % MOD + MOD) % MOD
+            };
+        }
+    }
+ 
+    pair<long long, long long> getHash() {
+        return prefixHash.back();
+    }
+ 
+    pair<long long, long long> getRange(int l, int r) {
+        return {
+                (prefixHash[r].first - (l ? prefixHash[l - 1].first : 0) + MOD) * inv1[l] % MOD,
+                (prefixHash[r].second - (l ? prefixHash[l - 1].second : 0) + MOD) * inv2[l] % MOD
+        };
+    }
+};

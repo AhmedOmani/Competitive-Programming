@@ -1,0 +1,9 @@
+https://codeforces.com/contest/1374/problem/C
+
+https://codeforces.com/contest/1672/problem/B
+
+https://codeforces.com/group/d7sWIJvZg5/contest/412651/problem/F (Precomputing by sieve and then using stack)
+
+https://codeforces.com/contest/637/problem/B
+
+https://codeforces.com/contest/1619/problem/E (full greedy intuition)

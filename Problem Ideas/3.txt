@@ -1,0 +1,3 @@
+man who walks in line has n lights and he walks n times
+int i-th time he switch th cops of light whos number is divisible by i
+after n walks determine the case of the light it is on / off ?

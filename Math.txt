@@ -1,0 +1,115 @@
+shttps://codeforces.com/contest/230/problem/B (Prime Factorization & Sieve)
+
+https://codeforces.com/contest/1542/problem/C (LCM)
+
+https://codeforces.com/contest/1771/problem/C (Prime Factorization)
+
+https://codeforces.com/contest/1350/problem/C (GCD & LCM)
+
+https://codeforces.com/contest/75/problem/C (Factors the two numbers)
+
+https://codeforces.com/contest/1542/problem/C (LCM)
+
+https://codeforces.com/problemset/problem/1458/A (Number theory)
+
+https://www.codechef.com/problems/LCM_GCD (LCM & GCD)
+
+https://codeforces.com/group/n8KAvVSzzc/contest/413078/problem/A (number theory)
+
+https://codeforces.com/group/V8Dgg1V6Pd/contest/411177/problem/P (formula with a lot of edge cases))
+
+https://codeforces.com/contest/1674/problem/E (Advanced math with multiple cases)
+
+https://codeforces.com/contest/1627/problem/D (Number theory (GCD))
+
+https://codeforces.com/contest/1788/problem/B (number theory)
+
+https://cses.fi/problemset/task/1095 (Binary Exponentiation basic Problem)
+
+https://codeforces.com/group/V8Dgg1V6Pd/contest/425376/problem/C (find the greatest prime divisor by sieve).)
+
+https://vjudge.net/contest/544797#problem/H -> the problem state (n ^ x > x!) ?
+
+https://codeforces.com/contest/1542/problem/B (form the problem into formula (a ^ x + yb) ) .
+
+https://vjudge.net/contest/546573#problem/L ( (a ^ b ^ c cmp d ^ e )  ) .
+
+https://codeforces.com/gym/104069/problem/B (Sieve / PrimeFactorization )
+
+https://vjudge.net/problem/UVA-11636 (first power of two smaller than n && nice idea i can make a problem similar to it )
+
+https://vjudge.net/problem/UVA-10814 (simplfy the expression using gcd *use BIGINTEGER CLASS )
+
+----------------------------------------------------------------------------------------------
+
+Legendre’s theorm (prime factorization for n!) :
+
+- direct problem on the theorm
+- https://vjudge.csgrandeur.cn/problem/UVA-160 /// not acc because output format
+
+- adhoc problem (need a theory about when the number m divides n) :
+https://vjudge.net/problem/UVA-10139
+
+- proof :
+https://math.stackexchange.com/questions/615814/whether-m-divides-n-or-not
+
+- explain :
+عشان نقول على رقم "س" بيقسم رقم تاني "ص" في نظرية بتقول انه لازم يكون البرايم فاكتورز كلها بتاعت المقسوم "ص" اكبر من المقسوم عليه "س" ز
+و بالتالي اتحول حل المسألة من بدل ما احسب مضروب الرقم و استخدم المود الى اني محتاج اجيب البرايم فاكتورز للرقمين
+
+بس في مشكلة بسيطة اني محتاج احسب الكلام جه في وقت سريع
+و هنا تتدخل اللجيندر ثيورم و تحل النقطة دي
+
+بكل بساطة امسك كل رقم برايم و هات الباورز بتاعته الي اصغر من ص و اقسمه على ال"ص" و ناتج القسمة خزنه في كاونتر و بكدة انت جبت عدد البرايمز الي موجوة في ص فاكتوريال 
+
+و بعد ما تخلص قارن و لو في برايم فاكتور واحد في ص اقل من س ساعتها مستحيل س يقسم ص 
+---------------------------------------------------------------------
+
+Euiler tochient function 
+
+basic problem :
+https://vjudge.net/problem/UVA-10179
+
+problem :
+https://codeforces.com/group/aJsGbtPwRo/contest/434617/problem/H
+
+- explain :
+https://www.youtube.com/watch?v=j4SNmckTZYI&list=PLPt2dINI2MIY7l5zyFd1W28rei3b-AXaJ&index=9
+
+- adhoc on Euler : 
+https://vjudge.net/problem/UVA-10820 (prefix of euler -> Table (a[i] = a[i - 1] + 2 * Euler(i)) )
+* note : this problem depend on fact that gcd(a , b) = x if multible the a , b by k it will be gcd(a * k , b * k) the answer will be x * k .
+
+----------------------------------------------------------------
+
+https://vjudge.csgrandeur.cn/problem/UVA-10110 (number of divisors is odd in the perfect squares only) .
+
+----------------------------------------------------------------
+
+problem about Congernce -> a Congerence b under (mod m) so (a - b) Congernce 0 under (mod m)
+so after that we want to find differnce beetwwen each element and found gcd beetwen differnces .
+
+more details :
+https://forthright48.com/uva-10407-simple-division/
+ 
+https://vjudge.net/problem/UVA-10407
+
+----------------------------------------------------------------
+
+brute force on divisors numDiv(1e9) == 100 !
+
+https://vjudge.net/problem/UVA-10892
+----------------------------------------------------------------
+https://vjudge.net/problem/UVA-10892
+
+----------------------------------------------
+
+https://codeforces.com/contest/682/submission/207961521 (mod idea)
+
+----------------------------------------------
+
+https://codeforces.com/contest/1759/problem/D (number theory)
+
+----------------------------------------------
+
+https://codeforces.com/contest/1165/problem/D (number theory)

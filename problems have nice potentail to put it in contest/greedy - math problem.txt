@@ -1,0 +1,1 @@
+https://codeforces.com/contest/1157/problem/D (build on the smallest case and then fix it bu equal distribution)

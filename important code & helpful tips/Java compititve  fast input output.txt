@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+
+
+public class Main {
+    public static void main(String[] args) throws FileNotFoundException {
+        //File file = new File("C:\\Users\\Ahmed\\Omani\\src\\input.txt");
+        //Scanner cin = new Scanner(file);
+        FastReader cin = new FastReader();
+        int n = cin.nextInt(), m = cin.nextInt();
+        int res = n + m;
+        System.out.println(res);
+    }
+
+    static class FastReader {
+        BufferedReader br;
+        StringTokenizer st;
+
+        public FastReader() throws FileNotFoundException {
+
+            //br = new BufferedReader(new InputStreamReader(System.in));
+            br = new BufferedReader(new FileReader("C:\\Users\\Ahmed\\Omani\\src\\input.txt"));
+
+        }
+
+        String next() {
+            while (st == null || !st.hasMoreElements()) {
+                try {
+                    st = new StringTokenizer(br.readLine());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return st.nextToken();
+        }
+
+        int nextInt() {
+            return Integer.parseInt(next());
+        }
+
+        long nextLong() {
+            return Long.parseLong(next());
+        }
+
+        double nextDouble() {
+            return Double.parseDouble(next());
+        }
+
+        String nextLine() {
+            String str = "";
+            try {
+                if (st.hasMoreTokens()) {
+                    str = st.nextToken("\n");
+                } else {
+                    str = br.readLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return str;
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,124 @@
+#include <bits/stdc++.h>
+#define all(v) v.begin() , v.end()
+#define Pi 3.14159
+using namespace std;
+
+using ll = long long;
+
+ll gcd(ll a, ll b) { return ((b == 0) ? a : gcd(b, a % b)); }
+ll lcm(ll a, ll b) { return (b / gcd(a, b)) * a; }
+
+
+void Omani () {
+ios::sync_with_stdio(0); cin.tie(0), cout.tie(0);
+#ifndef ONLINE_JUDGE
+freopen("input.txt", "r", stdin);
+#endif
+}
+
+const int N = 1e6+10 ,M = 3e5+10 ,mod = 1e9+7, p = 31, p2 = 37 , mod2 = 1e9+9;
+const ll inf = LLONG_MAX;
+
+ll pw[N], pref[N], inv[N];
+ll pw2[N], pref2[N], inv2[N];
+
+int add( int a , int b , int m)
+{
+    return ( a + b) % m;
+}
+
+int mul ( int a , int b , int m)
+{
+    return 1LL * a * b % m;
+}
+
+
+int fp( int b , int p , int m)
+{
+    if (!p)
+        return 1;
+    int temp = fp( b , p >> 1 , m);
+    temp = mul(temp,temp,m);
+    if(p&1)
+        temp = mul(temp,b,m);
+    return temp;
+}
+
+void pre()
+{
+
+    pw[0] = 1, inv[0] = 1;
+    pw2[0] = 1, inv2[0] = 1;
+    int mul_inv = fp(p,mod-2,mod);
+    int mul_inv2 = fp(p2,mod2-2,mod2);
+    // mul_inv = p ^ -1
+    // inv[2] = p ^ -2 =  inv[1]  * mul_inv
+    //                    p ^ -1 * p ^ -1 = p^-2
+    // inv[3] = p ^ -3 = inv[2] * mul_inv
+    //                    p^-2 * p^-1 = p^-3
+    for ( int i = 1 ; i < N ; i++)
+    {
+        pw[i] = mul(p , pw[i-1],mod);
+        inv[i] = mul(mul_inv,inv[i-1],mod);
+        pw2[i] = mul(p2 , pw2[i-1],mod2);
+        inv2[i] = mul(mul_inv2,inv2[i-1],mod2);
+    }
+}
+
+int get_hash( string &st)
+{
+    for ( int i = 0 ; i < st.size() ; i++)
+    {
+        pref[i+1] = mul((st[i] - 'a' + 1) ,pw[i],mod);
+        pref[i+1] = add(pref[i],pref[i+1],mod);
+        pref2[i+1] = mul((st[i] - 'a' + 1) ,pw2[i],mod2);
+        pref2[i+1] = add(pref2[i],pref2[i+1],mod2);
+    }
+    return pref[st.size()];
+}
+
+pair < int , int > get_hash_range( int L , int R)
+{
+    // pref[R] - pref[L] / pw[L-1]
+    // ( pref[R] - pref[L] )  * inverse(pw[L-1))
+    // inverse(x) = x ^ (mod - 2)              if x and mod are coprime
+    return {mul(add(pref[R] ,mod - pref[L-1],mod) , inv[L-1],mod),
+            mul(add(pref2[R] ,mod2 - pref2[L-1],mod2) , inv2[L-1],mod2)};
+}
+
+
+void Solve() {
+
+    int n , k ;
+    cin >> n >> k ;
+
+    string s ;
+    cin >> s ;
+
+    Hash(s) ;
+
+    set < pair < int , int > > st ;
+
+    int cnt = 0 ;
+
+    for (int i = 0 ; i < s.size() ; i++) {
+
+        int L = i + 1 , R = i + k ;
+
+        if (R > s.size())
+            break ;
+
+        pair < int , int > HashSub = GetRange(L , R) ;
+
+        st.insert(HashSub) ;
+    }
+
+    cout << st.size() << endl ;
+}
+
+int main() {
+Pre() ;
+Omani() ;
+int T = 1 ;                                   cin >> T ;
+while(T--) Solve() ;
+}

@@ -1,0 +1,12 @@
+ll x = 0, y = 0; 
+ll Extended_Euclidean(ll a, ll b){ 
+  if (b == 0){
+    x = 1, y = 0;
+    return a;
+  }
+  ll d = Extended_Euclidean(b, a % b);
+  ll x1 = y;
+  ll y1 = x - (a / b) * y;
+  x = x1, y = y1;
+  return d;
+}

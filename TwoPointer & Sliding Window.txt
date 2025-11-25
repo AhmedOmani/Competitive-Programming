@@ -1,0 +1,17 @@
+https://codeforces.com/problemset/problem/580/A -> maximum increasing subarray
+
+https://codeforces.com/contest/1777/problem/C -> Slidind Window
+
+https://codeforces.com/contest/1547/problem/C -> two pointer (merge two sorted list appoach)
+
+https://codeforces.com/contest/1789/problem/B (East two pointer approch)
+
+https://cses.fi/problemset/task/1084 (Two Pointer approach) .
+
+https://cses.fi/problemset/task/1090/ (Two Pointer approach) .
+
+https://codeforces.com/contest/1208/problem/B (Two pointer) .
+
+https://codeforces.com/contest/1133/problem/C (Two Pointer) .
+
+https://codeforces.com/problemset/problem/1692/G (you need to figure a smart observation to convert it into fixed two pointer problem)

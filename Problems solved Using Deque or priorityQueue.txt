@@ -1,0 +1,7 @@
+https://leetcode.com/problems/sliding-window-maximum/
+
+https://codeforces.com/contest/1672/problem/A (Priority Queue)
+
+https://codeforces.com/gym/102911/problem/G (Priority Queue)
+
+https://codeforces.com/contest/1800/problem/C1 (Priority Queue)

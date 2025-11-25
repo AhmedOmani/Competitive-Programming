@@ -1,0 +1,1 @@
+https://codeforces.com/gym/104069/problem/H (stars and bars counting technique)
