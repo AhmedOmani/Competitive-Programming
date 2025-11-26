@@ -1,3 +1,12 @@
 https://leetcode.com/problems/satisfiability-of-equality-equations/submissions/
 https://codeforces.com/contest/1670/problem/C
 https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+-------
+https://leetcode.com/problems/maximize-alternating-sum-using-swaps/description/
+https://ideone.com/j8FLD5 => solution code
+
+Solution:
+	The idea that you have the space of using swaping indecies as you want , so you collect all related indecies that you can go through like
+	[0,2][1,2] => that means that you can swap as many as you can between 0,1,2 and they become one component 
+        so we use DSU to collect indecies in the same component and then greedly we put maximum numbers in even indecies and minimum numbers in odd indecies
+        by that way it is the 100% your best to maximize the final answer
