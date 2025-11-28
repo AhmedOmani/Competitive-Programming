@@ -23,3 +23,8 @@ https://codeforces.com/group/u3Ii79X3NY/contest/270254/problem/T (set + map + so
 https://codeforces.com/contest/1729/problem/D (set || priority) + greedy intuition
 
 https://codeforces.com/contest/1102/problem/D (greedy - strings)
+
+problem: https://leetcode.com/problems/create-maximum-number/description/?envType=problem-list-v2&envId=greedy (greedy + stack)
+solution: https://ideone.com/d39qtE
+
+https://leetcode.com/problems/patching-array/description/?envType=problem-list-v2&envId=greedy (strong greedy intuition  + math)
